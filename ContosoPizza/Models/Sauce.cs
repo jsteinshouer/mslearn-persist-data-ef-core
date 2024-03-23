@@ -4,10 +4,10 @@ namespace ContosoPizza.Models;
 
 public class Sauce
 {
-    [Required]
-    [MaxLength(100)]
     public int Id { get; set; }
 
+    [Required]
+    [MaxLength(100)]
     public string? Name { get; set; }
 
     public bool IsVegan { get; set; }
