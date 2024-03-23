@@ -23,3 +23,9 @@ dotnet ef migrations add InitialCreate --context PizzaContext
 ```
 
 ## [Change the model and update the database schema](https://learn.microsoft.com/en-us/training/modules/persist-data-ef-core/3-migrations#change-the-model-and-update-the-database-schema)
+
+Changed models and ran this to generate a migration script
+
+```
+dotnet ef migrations add ModelRevisions --context PizzaContext
+```
