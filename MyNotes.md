@@ -29,3 +29,9 @@ Changed models and ran this to generate a migration script
 ```
 dotnet ef migrations add ModelRevisions --context PizzaContext
 ```
+
+Warning about possibly loss of data due to changing the relationship. Be sure the check scripts before running.
+
+```
+dotnet ef database update --context PizzaContext
+```
