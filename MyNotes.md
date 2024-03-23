@@ -35,3 +35,16 @@ Warning about possibly loss of data due to changing the relationship. Be sure th
 ```
 dotnet ef database update --context PizzaContext
 ```
+
+## [Reverse-engineer from an existing database](https://learn.microsoft.com/en-us/training/modules/persist-data-ef-core/6-reverse-engineering)
+
+Scaffold models for existing database
+
+```
+dotnet ef dbcontext scaffold "Data Source=Promotions/Promotions.db" Microsoft.EntityFrameworkCore.Sqlite --context-dir Data --output-dir Models
+```
+
+
+## Next steps
+
+https://learn.microsoft.com/en-us/training/modules/persist-data-ef-core/7-summary
